@@ -159,7 +159,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/02/12/csdn_export_md/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/2023/02/12/csdn_export_md/" class="post-title-link" itemprop="url">spl注入</a>
         </h2>
 
         <div class="post-meta">
@@ -170,7 +170,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-02-12 21:44:28 / 修改时间：21:44:06" itemprop="dateCreated datePublished" datetime="2023-02-12T21:44:28+08:00">2023-02-12</time>
+              <time title="创建时间：2023-02-12 21:44:28 / 修改时间：22:24:24" itemprop="dateCreated datePublished" datetime="2023-02-12T21:44:28+08:00">2023-02-12</time>
             </span>
 
           
@@ -184,7 +184,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>sql注入<br>当查询到数据表中存在同时满足 username 和 password 字段时，会返回登录成功。尝试在用户名中输入 123’ or 1&#x3D;1 #, 密码同样输入 123’ or 1&#x3D;1 #<br>执行语句<br>select * from users where username&#x3D;’123’ or 1&#x3D;1 #’ and password&#x3D;’123’ or 1&#x3D;1 #’<br>按照 Mysql 语法，# 后面的内容会被忽略<br>实际语句<br>select * from users where username&#x3D;’123’ or 1&#x3D;1<br>由于判断语句 or 1&#x3D;1 恒成立，所以结果当然返回真，成功登录<br>不使用 # 屏蔽单引号，采用手动闭合的方式<br>在用户名中输入 123’ or ‘1’&#x3D;’1, 密码同样输入 123’ or ‘1’&#x3D;’1<br>实际语句<br>select * from users where username&#x3D;’123’ or ‘1’&#x3D;’1’ and password&#x3D;’123’ or ‘1’&#x3D;’1<br>两个 or 语句使 and 前后两个判断永远恒等于真，所以能够成功登录</p>
+          <p>当查询到数据表中存在同时满足 username 和 password 字段时，会返回登录成功。尝试在用户名中输入 123’ or 1&#x3D;1 #, 密码同样输入 123’ or 1&#x3D;1 #<br>执行语句<br>select * from users where username&#x3D;’123’ or 1&#x3D;1 #’ and password&#x3D;’123’ or 1&#x3D;1 #’<br>按照 Mysql 语法，# 后面的内容会被忽略<br>实际语句<br>select * from users where username&#x3D;’123’ or 1&#x3D;1<br>由于判断语句 or 1&#x3D;1 恒成立，所以结果当然返回真，成功登录<br>不使用 # 屏蔽单引号，采用手动闭合的方式<br>在用户名中输入 123’ or ‘1’&#x3D;’1, 密码同样输入 123’ or ‘1’&#x3D;’1<br>实际语句<br>select * from users where username&#x3D;’123’ or ‘1’&#x3D;’1’ and password&#x3D;’123’ or ‘1’&#x3D;’1<br>两个 or 语句使 and 前后两个判断永远恒等于真，所以能够成功登录</p>
 
       
     </div>
@@ -218,7 +218,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/02/12/phps/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/2023/02/12/phps/" class="post-title-link" itemprop="url">phps</a>
         </h2>
 
         <div class="post-meta">
@@ -229,7 +229,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-02-12 11:02:10 / 修改时间：11:01:58" itemprop="dateCreated datePublished" datetime="2023-02-12T11:02:10+08:00">2023-02-12</time>
+              <time title="创建时间：2023-02-12 11:02:10 / 修改时间：22:23:55" itemprop="dateCreated datePublished" datetime="2023-02-12T11:02:10+08:00">2023-02-12</time>
             </span>
 
           
@@ -243,7 +243,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>PHP2<br>Can you anthenticate to this website?<br>查看源代码什么都没有，扫描一下，有个index.phps 打开网址。<br>打开后出现代码，查看源代码<br>urldecode函数 将括号中的字符串解码<br>&#x3D;&#x3D;&#x3D;是比较值和数据类型<br>&#x3D;&#x3D;它是比较值，不比较数据类型<br>如果get请求id&#x3D;admin就显示flag<br>浏览器会对非ASCII字符自动进行一次urldecode，所以我们还得编码两次<br>打开bp得到%25%36%31%25%36%34%25%36%64%25%36%39%25%36%65<br>用get请求传递id得到flag cyberpeace{87d536e96cccb7f63155e2e497bfd4e4}</p>
+          <p>Can you anthenticate to this website?<br>查看源代码什么都没有，扫描一下，有个index.phps 打开网址。<br>打开后出现代码，查看源代码<br>urldecode函数 将括号中的字符串解码<br>&#x3D;&#x3D;&#x3D;是比较值和数据类型<br>&#x3D;&#x3D;它是比较值，不比较数据类型<br>如果get请求id&#x3D;admin就显示flag<br>浏览器会对非ASCII字符自动进行一次urldecode，所以我们还得编码两次<br>打开bp得到%25%36%31%25%36%34%25%36%64%25%36%39%25%36%65<br>用get请求传递id得到flag cyberpeace{87d536e96cccb7f63155e2e497bfd4e4}</p>
 
       
     </div>
