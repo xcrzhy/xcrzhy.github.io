@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Referer��HTTP����header�е�һ���֣����ʾ����ǰ��Դ�Ŀͻ�����Դ�����������web���������������ʱ��ͷ����Ϣ���Я��Referer  ʹ��brup�������������Proxy���淢�͵�Repeater����Httpͷ�е�X-Forwarded-For��Ϊ��ĵ�ip  ͨ��brup���أ���ʹ">
+  <meta name="description" content="Referer是HTTP请求header中的一部分，其表示请求当前资源的客户端来源，当浏览器向web服务器发送请求的时候，头部信息里会携带Referer  使用brup拦截请求包，在Proxy里面发送到Repeater，将Http头中的X-Forwarded-For改为想改的ip  通过brup拦截，再使用Reapter修改Referer为想指定的URL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Referer��α��">
+<meta property="og:title" content="Referer的伪造">
 <meta property="og:url" content="http://example.com/2023/02/15/%E3%80%90%E6%97%A0%E6%A0%87%E9%A2%98%E3%80%91/index.html">
 <meta property="og:site_name" content="zxcr">
-<meta property="og:description" content="Referer��HTTP����header�е�һ���֣����ʾ����ǰ��Դ�Ŀͻ�����Դ�����������web���������������ʱ��ͷ����Ϣ���Я��Referer  ʹ��brup�������������Proxy���淢�͵�Repeater����Httpͷ�е�X-Forwarded-For��Ϊ��ĵ�ip  ͨ��brup���أ���ʹ">
+<meta property="og:description" content="Referer是HTTP请求header中的一部分，其表示请求当前资源的客户端来源，当浏览器向web服务器发送请求的时候，头部信息里会携带Referer  使用brup拦截请求包，在Proxy里面发送到Repeater，将Http头中的X-Forwarded-For改为想改的ip  通过brup拦截，再使用Reapter修改Referer为想指定的URL">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-15T10:53:05.561Z">
-<meta property="article:modified_time" content="2023-02-15T10:54:09.765Z">
+<meta property="article:published_time" content="2023-02-15T10:59:36.524Z">
+<meta property="article:modified_time" content="2023-02-15T11:00:33.004Z">
 <meta property="article:author" content="zhy">
 <meta name="twitter:card" content="summary">
 
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>Referer��α�� | zxcr</title>
+  <title>Referer的伪造 | zxcr</title>
   
 
 
@@ -163,7 +163,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Referer��α��
+          Referer的伪造
         </h1>
 
         <div class="post-meta">
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-02-15 18:53:05 / 修改时间：18:54:09" itemprop="dateCreated datePublished" datetime="2023-02-15T18:53:05+08:00">2023-02-15</time>
+              <time title="创建时间：2023-02-15 18:59:36 / 修改时间：19:00:33" itemprop="dateCreated datePublished" datetime="2023-02-15T18:59:36+08:00">2023-02-15</time>
             </span>
 
           
@@ -188,9 +188,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <pre><code> Referer��HTTP����header�е�һ���֣����ʾ����ǰ��Դ�Ŀͻ�����Դ�����������web���������������ʱ��ͷ����Ϣ���Я��Referer
- ʹ��brup�������������Proxy���淢�͵�Repeater����Httpͷ�е�X-Forwarded-For��Ϊ��ĵ�ip
- ͨ��brup���أ���ʹ��Reapter�޸�RefererΪ��ָ����URL
+        <pre><code> Referer是HTTP请求header中的一部分，其表示请求当前资源的客户端来源，当浏览器向web服务器发送请求的时候，头部信息里会携带Referer
+ 使用brup拦截请求包，在Proxy里面发送到Repeater，将Http头中的X-Forwarded-For改为想改的ip
+ 通过brup拦截，再使用Reapter修改Referer为想指定的URL
 </code></pre>
 
     </div>
